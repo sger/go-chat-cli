@@ -140,7 +140,7 @@ func main() {
 	// https://github.com/grpc/grpc-go/blob/master/Documentation/server-reflection-tutorial.md
 	reflection.Register(svc)
 	// Serve gRPC Service with Error
-	log.Printf("Listening Serice on: %v", *port)
+	log.Printf("Listening Service on: %v", *port)
 	if err := svc.Serve(listen); err != nil {
 		log.Fatalf("Failed to Serve: %v", err)
 	}
